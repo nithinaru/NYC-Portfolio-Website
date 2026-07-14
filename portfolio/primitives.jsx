@@ -136,7 +136,7 @@ function PfStatusLights() {
     { color: "#00933c", label: "Online",   cls: "pf-blink-pulse pf-blink-1" },
     { color: "#ee352e", label: "Email",    cls: "pf-blink-pulse pf-blink-2", href: "mailto:nithin.alaska@gmail.com" },
     { color: "#0039a6", label: "LinkedIn", cls: "pf-blink-slow pf-blink-3",  href: "https://www.linkedin.com/in/aruswamy" },
-    { color: "#fccc0a", label: "GitHub",   cls: "pf-blink pf-blink-4",       href: "https://github.com/nithin-arus" },
+    { color: "#fccc0a", label: "GitHub",   cls: "pf-blink pf-blink-4",       href: "https://github.com/nithinaru" },
     { color: "#ff6319", label: "Twitter",  cls: "pf-blink pf-blink-5",       href: "https://x.com/nithinaru" },
   ];
   return (

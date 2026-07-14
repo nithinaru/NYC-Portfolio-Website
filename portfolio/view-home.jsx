@@ -109,27 +109,27 @@ function ViewHome() {
               ),
             },
             {
-              icon: "D", line: "G", time: "Now", st: "Live", stc: "#00933c",
-              dest: (
-                <>
-                  Designed a Minimalist{" "}
-                  <a
-                    href="https://apps.apple.com/us/app/oneday-by-nithin-aruswamy/id6755661127"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    style={{ color: "#9aa0a6", textDecoration: "none" }}
-                  >
-                    Productivity App
-                  </a>
-                </>
-              ),
-            },
-            {
-              icon: "O", line: "Y", time: "Q2", st: "Planned", stc: "#fccc0a",
+              icon: "O", line: "Y", time: "Now", st: "Live", stc: "#00933c",
               dest: (
                 <>
                   Operations Research in{" "}
                   <span style={{ color: "#9aa0a6" }}>Marketing Analytics</span>
+                </>
+              ),
+            },
+            {
+              icon: "T", line: "P", time: "Q3", st: "Planned", stc: "#fccc0a",
+              dest: (
+                <>
+                  Designing a{" "}
+                  <a
+                    href="https://github.com/nithinaru/Truffle"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ color: "#9aa0a6", textDecoration: "none" }}
+                  >
+                    Natural Language Optimizer
+                  </a>
                 </>
               ),
             },
