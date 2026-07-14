@@ -5,9 +5,7 @@ function ViewResearch() {
     { id: "PRJ-01", title: "Therapeuo",    sub: "Smart Insole",                role: "Co-founder",   year: "2026", status: "Live",     href: "https://therapeuo.xyz/" },
     { id: "PRJ-02", title: "OneDay",       sub: "Productivity App",            role: "Founder",      year: "2025", status: "Active",   href: "https://apps.apple.com/us/app/oneday-by-nithin-aruswamy/id6755661127" },
     { id: "PRJ-03", title: "Jet-Set Teen", sub: "Travel Guide",                role: "Author",       year: "2024", status: "Active",   href: "https://www.amazon.com/Jet-Set-Teen-International-Travels-Budgeting/dp/B0DF6VKC18" },
-    { id: "PRJ-04", title: "GuestFlow",    sub: "Hospitality Orchestration",   role: "Co-Lead",      year: "2026", status: "Archived", href: "https://github.com/TarunYadgirkar/guestflow" },
-    { id: "PRJ-05", title: "HealthFlow",   sub: "911 Dispatch Workflow",       role: "Contributor",  year: "2026", status: "Archived", href: "https://github.com/PranavAchar01/HealthFlow-ApifyxScalekit" },
-    { id: "PRJ-06", title: "Terran",       sub: "Autonomous Farming",          role: "Co-Founder",   year: "2025", status: "Archived", href: "https://youtu.be/HTlI9NxZe-g?si=V1cE4Rpiqy2UMVoT" },
+    { id: "PRJ-04", title: "Terran",       sub: "Autonomous Farming",          role: "Co-Founder",   year: "2025", status: "Archived", href: "https://youtu.be/HTlI9NxZe-g?si=V1cE4Rpiqy2UMVoT" },
   ];
   const papers = [
     { id: "P-01", title: "Math Modeling & Geometry for Fabric Analysis",       venue: "TMLR",                       year: "2025", status: "Published", cite: 2,   href: "https://openreview.net/pdf/7a75b4e1e1528208c787ca2058ed083741cc29b7.pdf" },
