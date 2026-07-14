@@ -81,9 +81,6 @@ button:focus-visible {
 .pf-tab:hover { background: #080808; }
 .pf-tab:hover .pf-tab-label { color: #fff; }
 
-/* Travel blog button — nudge arrow on hover */
-.pf-travel:hover .pf-travel-arrow { transform: translateX(6px); }
-
 /* Experience card link circle — lift on hover */
 .pf-exp-link {
   transition: transform 180ms ease, box-shadow 180ms ease;

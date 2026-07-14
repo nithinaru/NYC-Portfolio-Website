@@ -47,7 +47,6 @@ function PfSidebar({ tab, setTab, tabs, open }) {
       {/* Travel blog — under construction; arrow nudges on hover */}
       <button
         type="button"
-        className="pf-travel"
         disabled
         aria-disabled="true"
         style={{
@@ -77,7 +76,7 @@ function PfSidebar({ tab, setTab, tabs, open }) {
             Under Construction
           </div>
         </div>
-        <span className="pf-travel-arrow" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", transition: "transform 180ms ease" }}>
+        <span style={{ display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
           <svg
             width="32"
             height="22"

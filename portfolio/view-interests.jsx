@@ -55,8 +55,8 @@ function ViewInterests() {
                   <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", marginLeft: "auto" }}>{g.items.length} stops</span>
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {g.items.map((s, i) => (
-                    <span key={i} className="pf-tight" style={{
+                  {g.items.map((s) => (
+                    <span key={s} className="pf-tight" style={{
                       fontSize: 13,
                       padding: "5px 10px",
                       border: "1px solid var(--hairline-strong)",
@@ -79,7 +79,7 @@ function ViewInterests() {
           </div>
           <div className="pf-3col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", border: "1px solid var(--hairline)" }}>
             {interests.map((it, i) => (
-              <div key={i} style={{
+              <div key={it} style={{
                 display: "flex", alignItems: "center", gap: 14,
                 padding: "16px 18px",
                 borderRight: (i % 3) !== 2 ? "1px solid var(--hairline)" : 0,

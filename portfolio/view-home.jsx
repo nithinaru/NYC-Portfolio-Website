@@ -42,7 +42,7 @@ function ViewHome() {
                 { country: "Peru",     code: "PE", when: "Summer 2025", flag: "PE" },
               ].map((c, i, a) => (
                 <div
-                  key={i}
+                  key={c.code}
                   style={{
                     display: "grid",
                     gridTemplateColumns: "56px 1fr auto",
@@ -98,7 +98,7 @@ function ViewHome() {
                 <>
                   Building World's 1st Mass-Market{" "}
                   <a
-                    href="https://www.therapeuo.xyz"
+                    href="https://therapeuo.xyz/"
                     target="_blank"
                     rel="noreferrer noopener"
                     style={{ color: "#9aa0a6", textDecoration: "none" }}
@@ -135,7 +135,7 @@ function ViewHome() {
             },
             { icon: "O", line: "B", time: "—",    dest: "[Open to opportunities]",  st: "Standby",  stc: "#a7a9ac" },
           ].map((d, i, a) => (
-            <div key={i} className="pf-departure-row"
+            <div key={`${d.icon}-${d.time}-${d.st}`} className="pf-departure-row"
               style={{
                 display: "grid",
                 gridTemplateColumns: "28px 80px 1fr auto",

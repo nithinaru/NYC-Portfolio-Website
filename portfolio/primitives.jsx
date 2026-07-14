@@ -188,7 +188,7 @@ function PfBoardHeader({ stationCode, name, platform }) {
           </>
         )}
       </div>
-      <div style={{ justifySelf: "center" }} className="pf-status-lights-wrap">
+      <div style={{ justifySelf: "center" }}>
         <PfStatusLights />
       </div>
       <div className="pf-board-header-right" style={{ display: "flex", alignItems: "center", gap: 14 }}>
