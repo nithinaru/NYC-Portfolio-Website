@@ -3,7 +3,8 @@
 
 function ViewExperience() {
   const stops = [
-    { current: true,  role: "Teacher Assistant",         co: "UC Berkeley Haas · B-BAY",   dates: "Sep 2025 — Present",  loc: "Berkeley, CA",  desc: "Guiding student founders to launch scalable ventures at Berkeley Business Academy for Youth.", href: "https://haas.berkeley.edu/business-academy/careers/instructors/", linkColor: "#fccc0a" },
+    { current: true,  role: "Operations Researcher",     co: "UC Davis · Graduate School of Management", dates: "May 2026 — Present", loc: "Davis, CA",     desc: "Built a donor allocation framework across 500k+ records to improve outreach ROI." },
+    { role: "Teacher Assistant",                        co: "UC Berkeley Haas · B-BAY",   dates: "Sep 2025 — May 2026", loc: "Berkeley, CA",  desc: "Guided student founders in launching scalable ventures at Berkeley Business Academy for Youth.", href: "https://haas.berkeley.edu/business-academy/careers/instructors/", linkColor: "#fccc0a" },
     { role: "Founder",                                   co: "OneDay",                      dates: "Aug 2025 — Dec 2025", loc: "Onsite",        desc: "Built full-stack productivity iOS app with 5,000+ users across 30 countries.", href: "https://apps.apple.com/us/app/oneday-by-nithin-aruswamy/id6755661127", linkColor: "#00933c" },
     { role: "Machine Learning Researcher",               co: "UC Irvine · EECS Lab",        dates: "Aug 2025 — Dec 2025", loc: "Irvine, CA",    desc: "Created novel AI pipeline with computer vision for fabric categorization and wear prediction.", href: "https://www.xia-lab.com/team", linkColor: "#b933ad" },
     { role: "Product Engineer",                          co: "Gamr (Techstars '23)",        dates: "Jul 2024 — Feb 2026", loc: "Onsite",        desc: "Built AMA, an AI-powered career guide for gamers at Africa's #1 gaming platform.", href: "https://www.gamr.africa/vision", linkColor: "#0039a6" },
@@ -22,7 +23,7 @@ function ViewExperience() {
             Experience
           </div>
           <div className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", paddingBottom: 12, textAlign: "right" }}>
-            Line O · 6 Stops<br />
+            Line O · 7 Stops<br />
             Origin → Present
           </div>
         </div>
