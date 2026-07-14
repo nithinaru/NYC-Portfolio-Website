@@ -6,11 +6,11 @@ function ViewMedia() {
       line: "R",
       title: "Books",
       items: [
-        { t: "Build",                    a: "Tony Fadell",            y: "2022", n: "★ Currently reading" },
+        { t: "Dune",                     a: "Frank Herbert",           y: "1965", n: "★ Currently reading" },
+        { t: "Build",                    a: "Tony Fadell",            y: "2022" },
         { t: "Meditations",              a: "Marcus Aurelius",        y: "170 CE" },
         { t: "Ikigai",                   a: "Francesc Miralles",      y: "2018" },
         { t: "Prisoners of Geography",   a: "Tim Marshall",           y: "2015" },
-        { t: "Michael Vey",              a: "Richard Paul Evans",     y: "2011" },
       ],
     },
     {
@@ -100,7 +100,7 @@ function ViewMedia() {
 
         <div className="pf-view-pad pf-media-footer" style={{ padding: "20px 40px", borderTop: "1px solid var(--hairline)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)" }}>
-            Library is non-exhaustive · Last revised May 2026
+            Library is non-exhaustive · Last revised July 2026
           </span>
           <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", display: "inline-flex", alignItems: "center", gap: 8 }}>
             <PfDot color="#00933c" className="pf-blink-pulse" />
