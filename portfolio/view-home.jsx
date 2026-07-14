@@ -70,7 +70,7 @@ function ViewHome() {
             <div style={{ fontSize: 14, color: "var(--muted)", lineHeight: 1.55 }}>
               I study Operations Research &amp; Math at UC Berkeley. I'm heavily invested in
               automating agriculture technology and the smart wearable space. I currently work
-              as a teacher assistant at Berkeley Haas for UC Berkeley's Business Academy for Youth.
+              as an operations researcher at the UC Davis Graduate School of Management.
             </div>
             <div style={{ marginTop: "auto", paddingTop: 12 }}>
               <PfStatPair k="Now Operating" v="Student" />
