@@ -7,6 +7,7 @@ function PfSidebar({ tab, setTab, tabs, open }) {
 
   return (
     <aside
+      id="portfolio-navigation"
       className={"pf-sidebar" + (open ? " pf-open" : "")}
       style={{
         width: 320,
@@ -37,7 +38,7 @@ function PfSidebar({ tab, setTab, tabs, open }) {
       </div>
 
       {/* Tabs */}
-      <nav className="pf-scroll" style={{ flex: 1, padding: "10px 0" }}>
+      <nav className="pf-scroll" aria-label="Portfolio sections" style={{ flex: 1, padding: "10px 0" }}>
         <PfTabGroup heading="Main Routes" tabs={groupA} tab={tab} setTab={setTab} />
         <div style={{ height: 14 }} />
         <PfTabGroup heading="Shortcuts" tabs={groupB} tab={tab} setTab={setTab} />
@@ -71,7 +72,7 @@ function PfSidebar({ tab, setTab, tabs, open }) {
           <div className="pf-tight" style={{ fontSize: 18, fontWeight: 700, lineHeight: 1 }}>
             Travel Blog
           </div>
-          <div className="pf-meta pf-travel-sub" style={{ fontSize: 9, color: "#3a2f00", marginTop: 4, display: "inline-flex", alignItems: "center", gap: 6 }}>
+          <div className="pf-meta" style={{ fontSize: 9, color: "#3a2f00", marginTop: 4, display: "inline-flex", alignItems: "center", gap: 6 }}>
             <PfDot color="#3a2f00" className="pf-blink" />
             Under Construction
           </div>
@@ -103,7 +104,7 @@ function PfSidebar({ tab, setTab, tabs, open }) {
         }}
         className="pf-meta"
       >
-        <span style={{ fontSize: 9, color: "var(--muted-2)" }}>37.7022°N / 121.9358°W</span>
+        <span style={{ fontSize: 9, color: "var(--muted-2)" }}>37.7749°N / 122.4194°W</span>
         <span style={{ fontSize: 9, color: "var(--muted-2)" }}>V1.0</span>
       </div>
     </aside>
@@ -130,6 +131,7 @@ function PfTabGroup({ heading, tabs, tab, setTab }) {
           <button
             key={t.id}
             className="pf-tab"
+            aria-current={active ? "page" : undefined}
             onClick={() => setTab(t.id)}
             style={{
               display: "grid",

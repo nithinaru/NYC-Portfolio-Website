@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Nithin Aruswamy</title>
 
-  <meta name="description" content="Nithin Aruswamy is a student at UC Berkeley (Applied AI & Op. Research). He's currently building the world's first smart insole at therapeuo.xyz" />
+  <meta name="description" content="Nithin Aruswamy studies Operations Research and Mathematics at UC Berkeley and works as an operations researcher at UC Davis." />
   <meta name="author" content="Nithin Aruswamy" />
   <meta name="theme-color" content="#000000" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Nithin Aruswamy" />
-  <meta property="og:description" content="Nithin Aruswamy is a student at UC Berkeley (Applied AI & Op. Research). He's currently building the world's first smart insole at therapeuo.xyz" />
+  <meta property="og:description" content="Nithin Aruswamy studies Operations Research and Mathematics at UC Berkeley and works as an operations researcher at UC Davis." />
   <meta property="og:url" content="https://nithinaruswamy.com/" />
   <meta property="og:image" content="https://nithinaruswamy.com/favicon.png" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Nithin Aruswamy" />
-  <meta name="twitter:description" content="Nithin Aruswamy is a student at UC Berkeley (Applied AI & Op. Research). He's currently building the world's first smart insole at therapeuo.xyz" />
+  <meta name="twitter:description" content="Nithin Aruswamy studies Operations Research and Mathematics at UC Berkeley and works as an operations researcher at UC Davis." />
   <meta name="twitter:image" content="https://nithinaruswamy.com/favicon.png" />
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
@@ -68,7 +68,10 @@
               </div>
             </div>
             <button
+              type="button"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
+              aria-controls="portfolio-navigation"
+              aria-expanded={menuOpen}
               onClick={() => setMenuOpen((o) => !o)}
               style={{
                 display: "inline-flex", alignItems: "center", gap: 8,

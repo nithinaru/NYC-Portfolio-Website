@@ -23,7 +23,7 @@ function ViewExperience() {
             Experience
           </div>
           <div className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", paddingBottom: 12, textAlign: "right" }}>
-            Line O · 7 Stops<br />
+            Line O · {stops.length} Stops<br />
             Origin → Present
           </div>
         </div>
@@ -31,7 +31,7 @@ function ViewExperience() {
         {/* Route */}
         <div className="pf-experience-route" style={{ position: "relative", paddingLeft: 56 }}>
           {stops.map((s, i) => (
-            <div key={i} className="pf-exp-stop" style={{ display: "grid", gridTemplateColumns: "1fr", paddingBottom: i === stops.length - 1 ? 0 : 28, position: "relative" }}>
+            <div key={`${s.role}-${s.co}`} style={{ display: "grid", gridTemplateColumns: "1fr", paddingBottom: i === stops.length - 1 ? 0 : 28, position: "relative" }}>
               {/* Connector segment from this dot down to the next (omit on last stop) */}
               {i < stops.length - 1 && (
                 <div

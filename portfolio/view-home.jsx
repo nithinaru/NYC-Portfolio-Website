@@ -7,7 +7,7 @@ function ViewHome() {
 
       <div className="pf-scroll" style={{ flex: 1 }}>
         {/* Marquee headline */}
-        <div className="pf-view-pad pf-home-marquee" style={{ padding: "44px 40px 28px", borderBottom: "1px solid var(--hairline)" }}>
+        <div className="pf-view-pad" style={{ padding: "44px 40px 28px", borderBottom: "1px solid var(--hairline)" }}>
           <div className="pf-meta" style={{ fontSize: 11, color: "var(--muted)", marginBottom: 18, display: "flex", alignItems: "center", gap: 8 }}>
             <PfDot color="#fccc0a" className="pf-blink" />
             Now Arriving · Platform 1
@@ -69,11 +69,11 @@ function ViewHome() {
             </div>
             <div style={{ fontSize: 14, color: "var(--muted)", lineHeight: 1.55 }}>
               I study Operations Research &amp; Math at UC Berkeley. I'm heavily invested in
-              automating agriculture technology and the smart wearable space. I currently work
+              agricultural automation and smart wearable technology. I currently work
               as an operations researcher at the UC Davis Graduate School of Management.
             </div>
             <div style={{ marginTop: "auto", paddingTop: 12 }}>
-              <PfStatPair k="Now Operating" v="Student" />
+              <PfStatPair k="Now Operating" v="Student · Researcher" />
               <PfStatPair k="Based" v="SF, California" />
               <PfStatPair k="In Service Since" v="2026" />
             </div>

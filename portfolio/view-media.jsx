@@ -69,7 +69,7 @@ function ViewMedia() {
               </div>
               <div>
                 {c.items.map((it, i, arr) => (
-                  <div key={i} style={{
+                  <div key={it.t} style={{
                     padding: "14px 24px",
                     borderBottom: i < arr.length - 1 ? "1px solid var(--hairline)" : 0,
                   }}>

@@ -54,32 +54,6 @@ function PfDot({ color = "#00933c", size = 8, className = "", style }) {
   );
 }
 
-function PfImageSlot({ label = "Image", height, style }) {
-  return (
-    <div
-      className="pf-stripes pf-meta"
-      style={{
-        width: "100%",
-        height: height || "100%",
-        background: "#0b0b0b",
-        border: "1px solid var(--hairline)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "var(--muted-2)",
-        fontSize: 10,
-        ...(style || {}),
-      }}
-    >
-      {label}
-    </div>
-  );
-}
-
-function PfRule({ color = "var(--hairline)", thickness = 1 }) {
-  return <div style={{ height: thickness, background: color, width: "100%" }} />;
-}
-
 // Live clock — updates every second
 function useLiveClock() {
   const [now, setNow] = React.useState(() => new Date());
@@ -227,5 +201,5 @@ function PfBoardHeader({ stationCode, name, platform }) {
 }
 
 Object.assign(window, {
-  PF_LINES, PfBullet, PfDot, PfImageSlot, PfRule, PfClock, PfBoardHeader, PfStatusLights, PfFooter, useLiveClock,
+  PF_LINES, PfBullet, PfDot, PfClock, PfBoardHeader, PfStatusLights, PfFooter, useLiveClock,
 });

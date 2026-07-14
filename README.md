@@ -2,18 +2,18 @@
 
 My personal portfolio, built to look like a New York City subway station board. Live at **[nithinaruswamy.com](https://nithinaruswamy.com)**.
 
-![Home](https://img.shields.io/badge/01-Home-ee352e?style=flat-square&labelColor=000000)
-![Experience](https://img.shields.io/badge/02-Experience-0039a6?style=flat-square&labelColor=000000)
+![Home](https://img.shields.io/badge/01-Home-0039a6?style=flat-square&labelColor=000000)
+![Experience](https://img.shields.io/badge/02-Experience-ff6319?style=flat-square&labelColor=000000)
 ![Research](https://img.shields.io/badge/03-Research-00933c?style=flat-square&labelColor=000000)
 ![Awards](https://img.shields.io/badge/04-Awards-fccc0a?style=flat-square&labelColor=000000)
 ![Interests](https://img.shields.io/badge/05-Interests-b933ad?style=flat-square&labelColor=000000)
-![Media](https://img.shields.io/badge/06-Media-ff6319?style=flat-square&labelColor=000000)
+![Media](https://img.shields.io/badge/06-Media-ee352e?style=flat-square&labelColor=000000)
 
 ---
 
 ## About the design
 
-The whole site is a tribute to **Massimo Vignelli** and his 1972 NYC Subway map. I kept staring at the old map, the subways signs in and around NYC and wanted my portfolio to *feel* like one, not just borrowing the colors.
+The whole site is a tribute to **Massimo Vignelli** and his 1972 NYC Subway map. I kept staring at the old map and the subway signs in and around NYC, and wanted my portfolio to *feel* like one—not just borrow the colors.
 
 So the layout is a station board. The sidebar is a platform sign with route listings. Each section gets a colored route bullet and a number (01–06). There's a live clock, blinking status lights, and a "Last Serviced" date so the board feels alive. My contact links are the signal lights up top.
 
@@ -49,14 +49,14 @@ Static site, no build step. Plain HTML and CSS plus React 18 loaded from a CDN a
 
 | # | Section | Line |
 |---|---------|------|
-| 01 | Home | 🔴 |
-| 02 | Experience | 🔵 |
+| 01 | Home | 🔵 |
+| 02 | Experience | 🟠 |
 | 03 | Research & Patents | 🟢 |
 | 04 | Awards | 🟡 |
 | 05 | Interests & Skills | 🟣 |
-| 06 | Favorite Media | 🟠 |
+| 06 | Favorite Media | 🔴 |
 
-*Travel Blog is the yellow button at the bottom — which is under construction.* Currently working on an interactive world map sites, inspired by global, vintage stamps.
+*The Travel Blog is the yellow button at the bottom and is currently under construction.* It will feature an interactive world map inspired by vintage global stamps.
 
 ---
 

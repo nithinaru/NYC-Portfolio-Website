@@ -20,10 +20,14 @@
     border-right: 0 !important;
     border-bottom: 1px solid var(--hairline-strong);
     transform: translateY(-110%);
+    visibility: hidden;
     transition: transform 220ms ease;
     z-index: 40;
   }
-  .pf-sidebar.pf-open { transform: translateY(0); }
+  .pf-sidebar.pf-open {
+    transform: translateY(0);
+    visibility: visible;
+  }
 
   /* Mobile top bar */
   .pf-mobile-bar {
@@ -74,12 +78,8 @@
     font-size: clamp(56px, 16vw, 116px) !important;
     line-height: 1.02 !important;
   }
-  .pf-section-title { font-size: 18px !important; }
-  .pf-section-sub { font-size: 13px !important; }
-
   /* Pad the body sections lighter */
   .pf-view-pad { padding: 20px 16px !important; }
-  .pf-view-pad-x { padding-left: 16px !important; padding-right: 16px !important; }
 
   /* Generic: collapse 2-col grids to 1 */
   .pf-2col { grid-template-columns: 1fr !important; }
@@ -179,10 +179,6 @@
   /* Sidebar identity — clamp big title */
   .pf-sidebar .pf-tighter { font-size: clamp(28px, 9vw, 38px) !important; }
 
-  /* Home departure rows — allow long dest to wrap nicely */
-  .pf-departure-row .pf-tight { font-size: 16px !important; line-height: 1.25 !important; word-break: normal !important; }
-  .pf-departure-row { padding: 14px 0 !important; }
-
   /* Section heads — tighter padding */
   .pf-section-head {
     padding: 14px 16px !important;
@@ -212,16 +208,13 @@
   .pf-departure-row {
     grid-template-columns: 24px 1fr auto !important;
     gap: 10px !important;
+    padding: 14px 0 !important;
   }
+  .pf-departure-row .pf-tight { font-size: 16px !important; line-height: 1.25 !important; word-break: normal !important; }
   .pf-departure-row .pf-departure-time { display: none; }
-
-  /* Mobile-only utility classes */
-  .pf-hide-mobile { display: none !important; }
-  .pf-mobile-only-flex { display: flex !important; }
 }
 
 /* Desktop hides the mobile-only chrome */
 @media (min-width: 821px) {
   .pf-mobile-bar { display: none !important; }
-  .pf-mobile-only-flex { display: none !important; }
 }

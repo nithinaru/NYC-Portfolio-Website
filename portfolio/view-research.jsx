@@ -4,8 +4,8 @@ function ViewResearch() {
   const projects = [
     { id: "PRJ-01", title: "Therapeuo",    sub: "Smart Insole",                role: "Co-founder",   year: "2026", status: "Live",     href: "https://therapeuo.xyz/" },
     { id: "PRJ-02", title: "OneDay",       sub: "Productivity App",            role: "Founder",      year: "2025", status: "Active",   href: "https://apps.apple.com/us/app/oneday-by-nithin-aruswamy/id6755661127" },
-    { id: "PRJ-03", title: "Jet-Set Teen", sub: "Travel Guide",                role: "Author",       year: "2024", status: "Active",   href: "https://www.amazon.com/Jet-Set-Teen-International-Travels-Budgeting/dp/B0DF6VKC18" },
-    { id: "PRJ-04", title: "Terran",       sub: "Autonomous Farming",          role: "Co-Founder",   year: "2025", status: "Archived", href: "https://youtu.be/HTlI9NxZe-g?si=V1cE4Rpiqy2UMVoT" },
+    { id: "PRJ-04", title: "Jet-Set Teen", sub: "Travel Guide",                role: "Author",       year: "2024", status: "Active",   href: "https://www.amazon.com/Jet-Set-Teen-International-Travels-Budgeting/dp/B0DF6VKC18" },
+    { id: "PRJ-03", title: "Terran",       sub: "Autonomous Farming",          role: "Co-Founder",   year: "2025", status: "Archived", href: "https://youtu.be/HTlI9NxZe-g?si=V1cE4Rpiqy2UMVoT" },
   ];
   const papers = [
     { id: "P-01", title: "Math Modeling & Geometry for Fabric Analysis",       venue: "TMLR",                       year: "2025", status: "Published", cite: 2,   href: "https://openreview.net/pdf/7a75b4e1e1528208c787ca2058ed083741cc29b7.pdf" },
@@ -33,7 +33,7 @@ function ViewResearch() {
               Research<span style={{ color: "var(--muted-2)" }}> &amp; </span>Patents
             </div>
             <div className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", textAlign: "right", paddingBottom: 12 }}>
-              {projects.length} Projects · {papers.length} Research · {patents.length} Patents
+              {projects.length} Projects · {papers.length} Research · {patents.length} Patent{patents.length === 1 ? "" : "s"}
             </div>
           </div>
         </div>
@@ -47,14 +47,14 @@ function ViewResearch() {
             <PfBullet label="P" line="O" size={24} />
             <div className="pf-tight" style={{ fontSize: 20, fontWeight: 700 }}>Projects</div>
             <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", marginLeft: "auto", display: "inline-flex", alignItems: "center", gap: 6 }}>
-              <PfDot color="#ff6319" className="pf-blink-pulse" /> Shipped &amp; Active
+              <PfDot color="#ff6319" className="pf-blink-pulse" /> Live · Active · Archived
             </span>
           </div>
           {projects.map((p, i, a) => {
             const stColor = p.status === "Live" ? "#00933c" : p.status === "Active" ? "#fccc0a" : "var(--muted)";
             const stDot   = p.status === "Live" ? "#00933c" : p.status === "Active" ? "#fccc0a" : "#6b6d70";
             return (
-              <div key={i} className="pf-row-grid" style={{
+              <div key={p.id} className="pf-row-grid" style={{
                 display: "grid",
                 gridTemplateColumns: "110px 1fr auto auto auto",
                 gap: 20,
@@ -95,7 +95,7 @@ function ViewResearch() {
             <PfBullet label="R" line="G" size={24} />
             <div className="pf-tight" style={{ fontSize: 20, fontWeight: 700 }}>Research</div>
             <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", marginLeft: "auto", display: "inline-flex", alignItems: "center", gap: 6 }}>
-              <PfDot color="#00933c" className="pf-blink-pulse" /> Peer Reviewed
+              <PfDot color="#00933c" className="pf-blink-pulse" /> Published &amp; Preprint
             </span>
           </div>
           <table className="pf-table" style={{ width: "100%", borderCollapse: "collapse" }}>
@@ -149,7 +149,7 @@ function ViewResearch() {
             </span>
           </div>
           {patents.map((p, i, a) => (
-            <div key={i} className="pf-row-grid" style={{
+            <div key={p.id} className="pf-row-grid" style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr auto auto",
               gap: 20,

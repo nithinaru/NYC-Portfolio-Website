@@ -38,7 +38,7 @@ function ViewInterests() {
             <PfDot color="#0039a6" className="pf-blink-pulse" />
             <div className="pf-tight" style={{ fontSize: 22, fontWeight: 700 }}>Skills</div>
             <span className="pf-meta" style={{ fontSize: 10, color: "var(--muted)", marginLeft: "auto" }}>
-              {skillGroups.reduce((n, g) => n + g.items.length, 0)} Designations · 5 Lines
+              {skillGroups.reduce((n, g) => n + g.items.length, 0)} Designations · {skillGroups.length} Lines
             </span>
           </div>
 

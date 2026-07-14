@@ -2,20 +2,10 @@
    All Helvetica. Mixed-case headings. */
 
 :root {
-  --ink: #ffffff;
-  --bg: #000000;
-  --surface: #0b0b0b;
   --hairline: #2a2a2a;
   --hairline-strong: #3d3d3d;
   --muted: #a7a9ac;
   --muted-2: #6b6d70;
-
-  --line-r: #ee352e;
-  --line-b: #0039a6;
-  --line-g: #00933c;
-  --line-o: #ff6319;
-  --line-y: #fccc0a;
-  --line-p: #b933ad;
 }
 
 * { box-sizing: border-box; }
@@ -46,7 +36,6 @@ html, body {
 .pf-tight    { letter-spacing: -0.005em; line-height: 1.15; }
 .pf-tighter  { letter-spacing: -0.015em; line-height: 1.05; }
 .pf-meta     { letter-spacing: 0.08em;  text-transform: uppercase; font-weight: 500; line-height: 1.4; }
-.pf-display  { letter-spacing: -0.01em; line-height: 1.02; }
 
 .pf-bullet {
   display: inline-flex;
@@ -59,24 +48,14 @@ html, body {
   flex: 0 0 auto;
 }
 
-.pf-stripes {
-  background-image: repeating-linear-gradient(
-    135deg,
-    transparent 0 10px,
-    rgba(255,255,255,0.04) 10px 11px
-  );
-}
-
 /* Blink animations — multiple offsets so the board feels alive */
 @keyframes pfBlinkFast { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0.18; } }
 @keyframes pfBlinkSlow { 0%, 70% { opacity: 1; } 71%, 100% { opacity: 0.2; } }
 @keyframes pfBlinkPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-@keyframes pfTick { 0%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
 
 .pf-blink       { animation: pfBlinkFast 1.4s steps(2, end) infinite; }
 .pf-blink-slow  { animation: pfBlinkSlow 2.2s steps(2, end) infinite; }
 .pf-blink-pulse { animation: pfBlinkPulse 1.6s ease-in-out infinite; }
-.pf-tick        { animation: pfTick 1s steps(2, end) infinite; }
 
 .pf-blink-1 { animation-delay: 0s; }
 .pf-blink-2 { animation-delay: 0.4s; }
@@ -91,6 +70,12 @@ html, body {
 
 /* Buttons reset */
 button { font-family: inherit; }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #fccc0a;
+  outline-offset: 3px;
+}
 
 /* Tap targets */
 .pf-tab:hover { background: #080808; }
@@ -113,4 +98,13 @@ button { font-family: inherit; }
 }
 .pf-exp-link:hover .pf-exp-arrow {
   transform: translate(1px, -1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

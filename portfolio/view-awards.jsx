@@ -13,7 +13,7 @@ function ViewAwards() {
     { line: "B", title: "Finalist",                      org: "Paradigm Challenge",  year: "2025", status: "Active" },
     { line: "R", title: "2nd Place · Design Hackathon",  org: "CapCut",              year: "2026", status: "Active" },
     { line: "O", title: "1st Place · Hackathon",         org: "Apify",               year: "2026", status: "Active" },
-  ];
+  ].sort((a, b) => Number(b.year) - Number(a.year));
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
@@ -44,8 +44,8 @@ function ViewAwards() {
             </tr>
           </thead>
           <tbody>
-            {rows.map((r, i) => (
-              <tr key={i} style={{ borderBottom: "1px solid var(--hairline)" }}>
+            {rows.map((r) => (
+              <tr key={`${r.title}-${r.org}`} style={{ borderBottom: "1px solid var(--hairline)" }}>
                 <td className="pf-cell-bullet" style={{ padding: "16px 12px 16px 40px", width: 80 }}>
                   <PfBullet label={r.title.charAt(0)} line={r.line} size={24} />
                 </td>
