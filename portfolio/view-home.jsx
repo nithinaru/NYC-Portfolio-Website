@@ -109,7 +109,7 @@ function ViewHome() {
               ),
             },
             {
-              icon: "O", line: "Y", time: "Now", st: "Live", stc: "#00933c",
+              icon: "O", line: "G", time: "Now", st: "Live", stc: "#00933c",
               dest: (
                 <>
                   Operations Research in{" "}
@@ -118,7 +118,7 @@ function ViewHome() {
               ),
             },
             {
-              icon: "T", line: "P", time: "Q3", st: "Planned", stc: "#fccc0a",
+              icon: "D", line: "Y", time: "Q3", st: "Planned", stc: "#fccc0a",
               dest: (
                 <>
                   Designing a{" "}
