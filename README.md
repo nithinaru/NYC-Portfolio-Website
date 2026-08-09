@@ -1,6 +1,6 @@
 # nithinaruswamy.com
 
-My personal portfolio, built to look like a New York City subway station board. Live at **[nycportfolio.link](https://nyc-portfolio-website-fliufacet-nithin-arus-projects.vercel.app/)**.
+My personal portfolio, built to look like a New York City subway station board. Live at **[nycportfolio.link](https://nyc-portfolio-website-fliufacet-nithin-arus-projects.vercel.app/)**. My portfolio has an updated design and can be found at **[nithinaruswamy.com](https://nithinaruswamy.com)** and its new GitHub Repo, **[simple-web](https://github.com/nithinaru/simple-website)**
 
 ![Home](https://img.shields.io/badge/01-Home-0039a6?style=flat-square&labelColor=000000)
 ![Experience](https://img.shields.io/badge/02-Experience-ff6319?style=flat-square&labelColor=000000)
